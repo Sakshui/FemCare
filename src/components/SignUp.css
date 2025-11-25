@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Auth Form Container */
+.auth-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-container:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+.auth-container h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.auth-container input:focus {
+  border-color: #ee9ca7;
+  box-shadow: 0 0 8px rgba(238, 156, 167, 0.3);
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #d80b26, #ea4659);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-container button:hover {
+  background: linear-gradient(135deg,#e6828f, #ea4659);
+  box-shadow: 0 5px 10px rgba(238, 156, 167, 0.4);
+}
+
+.auth-container p{
+  padding: 3px;
+}
+/* Links */
+.auth-container a {
+  color: #ea4659;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .auth-container {
+    width: 90%;
+  }
+}

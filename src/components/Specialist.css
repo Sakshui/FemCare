@@ -1,0 +1,96 @@
+.specialist-container {
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Keeps the scrollbar on the right */
+.specialist-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.specialist-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.specialist-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.specialist-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.specialist-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.specialist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  min-height: 100px; 
+  position: relative;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Ensures spacing between buttons */
+  margin-top: 10px;
+}
+
+.visit-link {
+  padding: 7px 12px;
+  background: #da2b42;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 120px;
+  transition: background 0.3s ease;
+}
+
+.visit-link:hover {
+  background:  #ea4659;
+}
+
+/* Doctor details below buttons */
+.details {
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+}
+
+.details h3 {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.details p {
+  margin: 3px 0;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
