@@ -30,7 +30,7 @@ FemCare is a smart and compassionate **AI-driven women’s health platform** des
 * Suggests relevant doctors/therapists when risk is Medium or High
 * Helps users find support quickly and safely
 
-### 🌐 **Full-Stack Real Application****
+### 🌐 **Full-Stack Real Application**
 
 * **Frontend:** React/Node
 * **Backend:** Flask (Python)
