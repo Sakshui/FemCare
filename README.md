@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 🌸 FemCare – AI-Powered Women’s Health & Postpartum Depression (PPD) Assessment Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FemCare is a smart and compassionate **AI-driven women’s health platform** designed to help users identify potential risks of **Postpartum Depression (PPD)** early. With a simple interface, intelligent chatbot support, and a powerful machine learning model running in the background, FemCare provides quick assessments, guidance, and reliable insights.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Key Features
 
-### `npm start`
+### 🔮 **AI-Based Postpartum Depression Prediction**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Uses a trained **XGBoost classifier** (`xgb_classifier_model_syn.pkl`)
+* Predicts **risk level** (Low / Medium / High)
+* Designed for screening & awareness (not medical diagnosis)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🤖 **Gemini-Powered Chatbot**
 
-### `npm test`
+* Built using the **Gemini API** via Python
+* Helps users ask emotional well-being questions
+* Provides safe and supportive responses
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧠 **Smart Personal Health Assessment**
 
-### `npm run build`
+* Simple and friendly questionnaire
+* Backend evaluates answers and returns **risk category**
+* Provides supportive suggestions and next steps
+* Triggers doctor recommendations when risk is Medium/High
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🌐 **Doctor Recommendation System**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Suggests relevant doctors/therapists when risk is Medium or High
+* Helps users find support quickly and safely
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🌐 **Full-Stack Real Application****
 
-### `npm run eject`
+* **Frontend:** React/Node
+* **Backend:** Flask (Python)
+* REST APIs for prediction & chatbot responses
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏗 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Machine Learning:** XGBoost
+* **Backend:** Flask, Python
+* **Frontend:** React
+* **AI Integration:** Gemini API
+* **Model Serving:** Pickle-based ML model
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 How It Works
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. User fills out a short postpartum questionnaire.
+2. Data is passed to Flask API (`synppdflask.py`).
+3. ML model predicts the risk score.
+4. Frontend displays results + supportive recommendations.
+5. User can talk to the chatbot for more help (via `geminippd.py`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 API Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Prediction Endpoint**
 
-### Analyzing the Bundle Size
+`POST /predict`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Accepts PPD questionnaire inputs
+* Returns ML model prediction + probability
 
-### Making a Progressive Web App
+### **Chatbot Endpoint**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`POST /chat`
 
-### Advanced Configuration
+* Sends user prompt
+* Returns Gemini-generated response
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 👩‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Sakshi Acharekar**
 
-### `npm run build` fails to minify
+📧 Email: [sakshiacharekar202@gmail.com](mailto:sakshiacharekar202@gmail.com)
+🔗 LinkedIn: [https://linkedin.com/in/sakshi-acharekar-56707b265](https://linkedin.com/in/sakshi-acharekar-56707b265)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
