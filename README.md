@@ -52,6 +52,13 @@ The React app is located in the `src/` directory and includes:
 
 ---
 
+## 📦 Deployment Notes
+
+* **Frontend (React)** is deployed to **Vercel** at the Live Demo URL.
+* **Backend (Flask)** is deployed on **Render**. Note: free or inactive Render services can be suspended when idle. To keep the backend responsive, we use an external uptime monitor (e.g. **UptimeRobot**) to periodically ping the API endpoint so the service doesn't go to sleep.
+
+---
+
 ## 🏗 Tech Stack
 
 * **Machine Learning:** XGBoost
