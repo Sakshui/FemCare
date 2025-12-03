@@ -40,6 +40,18 @@ FemCare is a smart and compassionate **AI-driven women’s health platform** des
 
 ---
 
+## 🧭 Frontend (React) — Key files & components
+
+The React app is located in the `src/` directory and includes:
+
+* `src/App.js` — Main app layout and routes
+* `src/index.js` — App entry point
+* `src/components/` — Reusable components:
+
+  * `LandingPage.js`, `Chatbot.js`, `SymptomForm.js`, `ViewDoctor.js`, `SignUp.js`, `Login.js`, `Specialist.js`, `Articles.js`, `Diet.js`, `Admin.js`
+
+---
+
 ## 🏗 Tech Stack
 
 * **Machine Learning:** XGBoost
